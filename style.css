@@ -1,0 +1,106 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(Assest/beautiful.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.container{
+    width: 520px;
+    height: 600px;
+    border: 1px solid black;
+    background-image: url("Assest/bg.jpg");
+    background-size: contain;
+    overflow: hidden;
+    position: relative;
+    animation: back 5s linear infinite;
+    /* background-repeat: no-repeat; */
+}
+.blueCar{
+    /* background-color: black; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 130px;
+    transform: rotate(180deg);
+    text-align: center;
+    animation: demo 5s linear infinite;
+}
+.blueCar img{
+    width: 80px;
+    height: 100px;
+}
+@keyframes demo{
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 600px;
+    }
+}
+.redCar{
+    position: absolute;
+    top: 450px;
+    left: 130px;
+    width: 130px;
+    text-align: center;
+}
+.redCar img{
+    width: 80px;
+    height: 100px;
+}
+
+.gameover{
+    text-align: center;
+    width: 400px;
+    height: 230px;
+    background-color: greenyellow;
+    border: 1px solid greenyellow;
+    border-radius: 16px;
+    color: red;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.gameover h1{
+    font-size: 45px;
+    font-family: cursive;
+    font-weight: bold;
+}
+.gameover button{
+    padding: 12px;
+    width: 120px;
+    border: none;
+    background-color: green;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border-radius: 16px;
+    cursor: pointer;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+}
+@keyframes back {
+    0%{
+        background-position: 0px 0px;
+    }
+    100%{
+        background-position: 0px 2000px;
+    }
+}
+.speed button{
+    padding: 15px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: blanchedalmond;
+    border: none;
+}

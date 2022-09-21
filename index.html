@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Assest/race.png" type="image/x-icon">
+    <title>CarRacingGame</title>
+</head>
+<body>
+<div class="container">
+    <div class="blueCar">
+        <img src="Assest/blue.png" alt="">
+    </div>
+    <div class="redCar">
+        <img src="Assest/race.png" alt="">
+    </div>
+</div>
+<audio src="sound/beep-07a.mp3" id="sound"></audio>
+<audio src="sound/beep-05.mp3" id="sound2"></audio>
+<div class="gameover">
+    <h1>Game Over</h1>
+    <p>Score : <span class="result"></span></p>
+    <button onclick="location.reload()">Restart</button>
+</div>
+<script src="index.js"></script> 
+</body>
+</html>
